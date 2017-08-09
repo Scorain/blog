@@ -1,5 +1,11 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+category:
+tags: []
 ---
+
+写在前面的话...
+
+<!-- more -->
+
