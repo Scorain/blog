@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Blogs Of Suny
 subtitle:
 description:
-author: John Doe
-language:
-timezone:
+author: suny
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://scorain.github.io/blog
-root: /blog/
+url: http://yoursite.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -79,4 +79,4 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/Scorain/blog.git
-  branch: gh-pages
+  branch: master
