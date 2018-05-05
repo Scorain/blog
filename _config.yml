@@ -3,18 +3,27 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Blogs Of Suny
-subtitle:
-description:
+title: suny
+maintitle: Blog Of Suny
+subtitle: 把浩瀚的海洋装进我胸膛
+keywords: 
+- suny
+- suny
+- suny
+- suny
+- suny
+description: Blog Of Suny
 author: suny
-language: zh-CN
-timezone: Asia/Shanghai
+email: 
+language: zh-Hans
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://scorain.github.io
+url: https://scorain.github.io/blog/
 root: /blog/
-permalink: :year/:month/:day/:title/
+permalink: :year/:title/
+#permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -25,7 +34,10 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: 
+- README.md
+- article_image/
+- todolist/*
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -35,7 +47,7 @@ external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
-relative_link: false
+relative_link: true
 future: true
 highlight:
   enable: true
@@ -72,11 +84,42 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: melody
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/Scorain/blog.git
-  branch: gh-pages
+  type:
+
+search:
+  path: search.xml
+  field: post
+
+sitemap:
+    path: sitemap.xml
+    # template: ./sitemap_template.xml
+
+nofollow:
+	enable: true
+	exclude:
+    - exclude1.com
+    - exclude2.com
+
+neat_enable: true
+
+neat_html:
+  enable: true
+  exclude:
+
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+    
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'

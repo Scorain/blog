@@ -1,11 +1,9 @@
 ---
 title: {{ title }}
 date: {{ date }}
-category:
-tags: []
+categories: 
+- 分类
+- 子分类
+tags: [标签1,标签2]
 ---
-
-写在前面的话...
-
-<!-- more -->
-
+<p style="text-indent:2em;"> </p><!--more-->

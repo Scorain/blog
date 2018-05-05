@@ -1,0 +1,26 @@
+#footer.layout
+  - var now = new Date()
+  - var nowYear = now.getFullYear()
+  .indentlev1 北风在吹着清冷的街道, 街灯在拉开长长的影子。
+  if theme.since && theme.since != nowYear
+    .copyright
+      span!= `&copy;${theme.since} - ${nowYear} By ${config.author}`
+      if theme.ICP.enable
+          a.icp(href=theme.ICP.url)
+            span=theme.ICP.text
+  else
+    .copyright
+      span!= `&copy;${nowYear} By ${config.author}`
+      if theme.ICP.enable
+          a.icp(href=theme.ICP.url)
+            span=theme.ICP.text
+  //- .framework-info
+  //-   span= _p('footer.driven') + ' - '
+  //-   a(href='http://hexo.io')
+  //-     span Hexo
+  //-   span.footer-separator |
+  //-   span= _p('footer.theme') + ' - '
+  //-   a(href='https://github.com/Molunerfinn/hexo-theme-melody')
+  //-     span Melody
+  if theme.busuanzi.enable
+    include ./count/busuanzi.pug
