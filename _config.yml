@@ -36,8 +36,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render: 
 - README.md
-- article_image/
-- todolist/*
+- images/
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -98,12 +97,6 @@ search:
 sitemap:
     path: sitemap.xml
     # template: ./sitemap_template.xml
-
-nofollow:
-	enable: true
-	exclude:
-    - exclude1.com
-    - exclude2.com
 
 neat_enable: true
 
