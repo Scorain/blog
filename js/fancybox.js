@@ -1,3 +1,3 @@
-// build time:Fri May 18 2018 10:02:47 GMT+0800 (中国标准时间)
+// build time:Fri May 18 2018 10:20:37 GMT+0800 (中国标准时间)
 $(function(){var a=$(".recent-post-item img");if(a.length===0){a=$("#post-content img")}for(var t=0;t<a.length;t++){var o=$('<a href="'+a[t].src+'" data-fancybox="group" data-caption="'+a[t].alt+'" class="fancybox"></a>');var r=a[t].alt;var n=$(a[t]).wrap(o);if(r){n.after('<div class="img-alt">'+r+"</div>")}}$().fancybox({selector:"[data-fancybox]",loop:true,transitionEffect:"slide"})});
 //rebuild by neat 
