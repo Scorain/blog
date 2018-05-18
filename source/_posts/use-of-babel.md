@@ -187,6 +187,10 @@ module.exports = {
 
 ![](/blog/images/use-of-babel/1.png)
 
+配置 babel-preset-env 插件集合时，源文件按照默认模块化方案 commonjs 被编译到当前主流浏览器可识别的版本
+
+![](/blog/images/use-of-babel/4.png)
+
 配置 babel-preset-env 插件集合，禁用模块化方案时，源文件按照当前模块化方案被编译到当前主流浏览器可识别的版本
 
 ![](/blog/images/use-of-babel/2.png)
